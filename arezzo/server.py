@@ -266,14 +266,21 @@ def edit_document(document_id: str, operations: list[dict]) -> dict:
     intent into a correct request sequence.
 
     **Recommended flow:** call read_document first, then describe your
-    changes using heading names or named ranges as addresses. Supports:
-    text insertion/deletion/replacement, formatting (bold, italic, headings,
-    links), tables, lists, images, headers/footers, footnotes, named ranges.
+    changes using heading names or named ranges as addresses.
+
+    Valid operation types: insert_text, delete_content, replace_all_text,
+    replace_section, update_text_style, update_paragraph_style,
+    create_paragraph_bullets, convert_to_list, insert_table,
+    insert_table_row, insert_table_column, delete_table_row,
+    delete_table_column, insert_bullet_list, insert_numbered_list,
+    insert_page_break, insert_inline_image, create_header, create_footer,
+    create_footnote, create_named_range, delete_named_range,
+    replace_named_range_content.
 
     Args:
         document_id: The Google Docs document ID.
         operations: List of operation dicts. Each has:
-            - type: operation name (insert_text, update_text_style, etc.)
+            - type: one of the operation types listed above
             - address: target location ({"heading": "Budget"}, {"start": true}, etc.)
             - params: operation-specific parameters
     """

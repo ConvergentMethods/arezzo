@@ -324,6 +324,32 @@ def val_insert_page_break(service):
     return validate_and_report("insert_page_break", service, doc_id, full_doc, ops, check)
 
 
+def val_insert_text_at_end(service):
+    """Isolated test: insert_text with {"end": true} lands at logical document end."""
+    doc_id, full_doc = create_standard_doc(service)
+
+    ops = [{
+        "type": "insert_text",
+        "address": {"end": True},
+        "params": {"text": "AREZZO END MARKER.\n"},
+    }]
+
+    def check(after):
+        text = get_body_text(after)
+        assert "AREZZO END MARKER." in text
+        # Verify it landed at the end — should be after "Conclusion" section content
+        conclusion_idx = text.index("positive.")
+        marker_idx = text.index("AREZZO END MARKER.")
+        assert marker_idx > conclusion_idx, (
+            f"End marker at {marker_idx} should be after conclusion text at {conclusion_idx}"
+        )
+        # Verify nothing meaningful follows the marker (only trailing whitespace)
+        after_marker = text[marker_idx + len("AREZZO END MARKER.\n"):].strip()
+        assert after_marker == "", f"Unexpected content after end marker: {after_marker!r}"
+
+    return validate_and_report("insert_text_at_end", service, doc_id, full_doc, ops, check)
+
+
 VALIDATIONS = {
     "insert_text": val_insert_text_after_heading,
     "replace_all": val_replace_all_text,
@@ -333,6 +359,7 @@ VALIDATIONS = {
     "bullet_list": val_insert_bullet_list,
     "header_footer": val_create_header_footer,
     "page_break": val_insert_page_break,
+    "insert_at_end": val_insert_text_at_end,
 }
 
 
