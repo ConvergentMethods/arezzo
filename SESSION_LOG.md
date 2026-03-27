@@ -255,14 +255,14 @@ No commit was made. All work recovered from unstaged/untracked files.
   - Created `scripts/` for dev utilities (auth.py, fixture scripts, validation scripts)
 - Rewrote CLAUDE.md to match Boyce standard (session protocol, folder visibility convention, directory tree, key commands, status bar)
 - Confirmed PyPI publication: arezzo 0.1.0 live, README renders correctly on PyPI
-- Confirmed arezzo.dev domain registration (DNS resolves, no site deployed)
+- Checked arezzo.dev — domain is taken (Porkbun registrant, not ours). Need alternative domain.
 - Updated CM root CLAUDE.md (stale Arezzo description → current state)
 - Updated all ops layer docs: ROADMAP.md, SESSION_LOG.md, OPUS_BRIEF.md (project + CEO), MASTER.md
 
 **Incomplete:**
 - Cross-platform MCP client testing — HITL (Will tests with Claude Desktop, Cursor, Claude Code)
 - MCP directory submissions — HITL (Will-controlled)
-- arezzo.dev site deployment — needs hosting decision
+- Domain decision — arezzo.dev is taken, need alternative
 - v0.1.1 publish with Opus review changes (operation type list in tool description)
 
 **Next step:** Will runs cross-platform MCP client testing. After that, MCP directory submissions.

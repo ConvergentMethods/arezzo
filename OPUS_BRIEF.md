@@ -12,7 +12,7 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
 
 ## Current State
 - **Phase:** PUBLISHED v0.1.0 to PyPI (2026-03-27). Post-publish review + distribution.
-- **Status:** `pip install arezzo` live. 210 unit tests, 9/9 live validations (8 Phase 3 + 1 end-of-doc added per Opus review). 6/6 live MCP validations. Domain `arezzo.dev` registered (no site deployed yet). Opus code review items implemented.
+- **Status:** `pip install arezzo` live. 210 unit tests, 9/9 live validations (8 Phase 3 + 1 end-of-doc added per Opus review). 6/6 live MCP validations. Opus code review items implemented. No domain yet (arezzo.dev is taken).
 - **Key deliverables:**
   - `arezzo/server.py` — MCP server with 3 tools, behavioral advertising framework, full operation type list in tool description (Opus review item)
   - `arezzo/cli.py` — CLI entry point (serve/init/version)
@@ -30,20 +30,20 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
 
 ## Recent Decisions
 - 2026-03-27: **PUBLISHED to PyPI.** `pip install arezzo` live. v0.1.0.
-- 2026-03-27: **arezzo.dev domain registered.** DNS resolves. No site deployed yet.
+- 2026-03-27: Domain search: arezzo.dev is taken (Porkbun). Need alternative.
 - 2026-03-27: Opus code review completed. Two items implemented: (1) exhaustive operation type list in edit_document tool description, (2) dedicated end-of-document live validation test.
 - 2026-03-27: Project directory reorganized to match Boyce paradigm (_strategy/, scripts/).
 - 2026-03-27: Will authorized CC to build through Phase 5 before HITL review.
 - 2026-03-24: Architecture locked: two-phase compilation, pure function compiler, 6 address modes.
 
 ## Open Questions
-- arezzo.dev site: what to deploy? Static page (like convergentmethods.com/boyce/) or redirect to PyPI/GitHub?
+- Domain: arezzo.dev is taken (Porkbun registrant, not ours). Alternatives: arezzo.tools, arezzo.io, or host under convergentmethods.com/arezzo/. Will decides.
 - MCP directory submission timing: Will's call.
 - Cross-platform MCP client testing: Claude Desktop, Cursor, Claude Code — Will tests.
 
 ## Blocked Items
 - MCP directory submissions — Will-controlled.
-- arezzo.dev site deployment — needs hosting decision.
+- Product site — needs domain decision first.
 
 ## Cross-Project Dependencies
 - Boyce shipped. No remaining Boyce blocker.
