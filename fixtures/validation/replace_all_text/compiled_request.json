@@ -1,0 +1,16 @@
+{
+  "requests": [
+    {
+      "replaceAllText": {
+        "containsText": {
+          "text": "revenue",
+          "matchCase": false
+        },
+        "replaceText": "REVENUE"
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkSsXEwcm54hVNbJsdHnYGi1MNAyI4uaxKxBmVyHvJG68jks-8R2nHOWwsQ83xdAp4eprbvba7BqaqsGIp9ebyb3RVn8Ko5jLJQwtrRc"
+  }
+}

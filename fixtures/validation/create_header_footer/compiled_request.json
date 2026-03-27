@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {
+      "createHeader": {
+        "type": "DEFAULT"
+      }
+    },
+    {
+      "createFooter": {
+        "type": "DEFAULT"
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkStb-0wbfIH-r1U9V3iH1Ab9rWiQQXopBcefKV2D8gURkptKALOpUB7o03bxuCamKIEwuuYC9xnrejg2Tg"
+  }
+}

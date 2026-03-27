@@ -1,0 +1,11 @@
+[
+  {
+    "createParagraphBullets": {
+      "range": {
+        "startIndex": 193,
+        "endIndex": 290
+      },
+      "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+    }
+  }
+]

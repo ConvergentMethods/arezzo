@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {
+      "createNamedRange": {
+        "name": "arezzo_test_range",
+        "range": {
+          "startIndex": 14,
+          "endIndex": 32,
+          "tabId": "t.0"
+        }
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkStX5AYqLWW0Q0FBZgGMwSRGZ-C6c0XY2BptRO5nHE4vsekZR8U5Zngj9Xb7rwN50AJdD4XiSY5kyiUlQo9MRP4VBrqIm_dLcUXR4Q8"
+  }
+}

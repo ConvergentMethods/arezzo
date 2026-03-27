@@ -1,0 +1,19 @@
+[
+  {
+    "insertText": {
+      "location": {
+        "index": 348
+      },
+      "text": "Step one\nStep two\nStep three\n"
+    }
+  },
+  {
+    "createParagraphBullets": {
+      "range": {
+        "startIndex": 348,
+        "endIndex": 377
+      },
+      "bulletPreset": "NUMBERED_DECIMAL_ALPHA_ROMAN"
+    }
+  }
+]

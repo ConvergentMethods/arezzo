@@ -1,0 +1,26 @@
+{
+  "requests": [
+    {
+      "insertText": {
+        "location": {
+          "index": 348,
+          "tabId": "t.0"
+        },
+        "text": "First item\nSecond item\nThird item\n"
+      }
+    },
+    {
+      "createParagraphBullets": {
+        "range": {
+          "startIndex": 348,
+          "endIndex": 382,
+          "tabId": "t.0"
+        },
+        "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkSvmTyqlxB84CfEB6fUUJrZwInJVOtEBZBqsmiv7HiNHqSqZguu3mms_Xps1vg4JDu6857Y1RjCsdbzlbQ00w3rD9DO2_qJugZa1WxE"
+  }
+}

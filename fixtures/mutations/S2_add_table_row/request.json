@@ -1,0 +1,14 @@
+[
+  {
+    "insertTableRow": {
+      "tableCellLocation": {
+        "tableStartLocation": {
+          "index": 348
+        },
+        "rowIndex": 1,
+        "columnIndex": 0
+      },
+      "insertBelow": true
+    }
+  }
+]

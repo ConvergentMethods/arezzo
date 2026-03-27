@@ -1,0 +1,56 @@
+[project]
+name = "arezzo"
+version = "0.1.0"
+description = "Deterministic compiler for Google Docs API operations"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Convergent Methods, LLC", email = "will@convergentmethods.com" }]
+keywords = ["google-docs", "mcp", "compiler", "agent", "llm", "automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Office/Business :: Office Suites",
+]
+dependencies = [
+    "google-api-python-client>=2.193.0",
+    "google-auth-httplib2>=0.3.0",
+    "google-auth-oauthlib>=1.3.0",
+    "mcp>=1.26.0",
+]
+
+[project.urls]
+Homepage = "https://convergentmethods.com"
+Repository = "https://github.com/ConvergentMethods/arezzo"
+Issues = "https://github.com/ConvergentMethods/arezzo/issues"
+
+[project.scripts]
+arezzo = "arezzo.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "_strategy/",
+    "fixtures/",
+    "scripts/",
+    "CLAUDE.md",
+    "OPUS_BRIEF.md",
+    "SESSION_LOG.md",
+    "ROADMAP.md",
+    ".python-version",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["arezzo/tests"]

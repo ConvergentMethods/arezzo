@@ -1,0 +1,10 @@
+[
+  {
+    "insertText": {
+      "location": {
+        "index": 99
+      },
+      "text": "INSERTED BETWEEN PARAGRAPHS.\n"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "requests": [
+    {
+      "insertText": {
+        "location": {
+          "index": 348,
+          "tabId": "t.0"
+        },
+        "text": "AREZZO APPENDED.\n"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 143,
+          "endIndex": 146,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkSsPjyGKsh__J9_Umt9JyTXpt8EDXnifRxDAn_GQVPggtzKjrLJD1eK0DejWANPZO57lwWxIVYAcw2BdSAWbhSOWOU4ISl-NfwoEoE4"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "updateTextStyle": {
+      "range": {
+        "startIndex": 51,
+        "endIndex": 60
+      },
+      "textStyle": {
+        "link": {
+          "url": "https://example.com/q1"
+        }
+      },
+      "fields": "link"
+    }
+  }
+]

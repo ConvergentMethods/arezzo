@@ -1,0 +1,19 @@
+[
+  {
+    "insertText": {
+      "location": {
+        "index": 348
+      },
+      "text": "Bullet item one\nBullet item two\nBullet item three\n"
+    }
+  },
+  {
+    "createParagraphBullets": {
+      "range": {
+        "startIndex": 348,
+        "endIndex": 398
+      },
+      "bulletPreset": "BULLET_DISC_CIRCLE_SQUARE"
+    }
+  }
+]

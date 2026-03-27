@@ -1,0 +1,14 @@
+[
+  {
+    "updateParagraphStyle": {
+      "range": {
+        "startIndex": 181,
+        "endIndex": 193
+      },
+      "paragraphStyle": {
+        "namedStyleType": "HEADING_3"
+      },
+      "fields": "namedStyleType"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "deleteContentRange": {
+      "range": {
+        "startIndex": 32,
+        "endIndex": 99
+      }
+    }
+  },
+  {
+    "insertText": {
+      "location": {
+        "index": 32
+      },
+      "text": "REPLACED NAMED RANGE CONTENT.\n"
+    }
+  }
+]

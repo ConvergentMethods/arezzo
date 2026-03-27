@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {
+      "insertTable": {
+        "location": {
+          "index": 116,
+          "tabId": "t.0"
+        },
+        "rows": 2,
+        "columns": 3
+      }
+    }
+  ],
+  "writeControl": {
+    "targetRevisionId": "AIxLkSsRC85z-kz39ZuNbIMk4eCIVi59qF48z_hHGgljVROAJQ2aphvMnKr4QoHOzYVEYSHtTCxr0azeaiABXMchRlCNo4G66kR7mQ6qzjA"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "insertInlineImage": {
+      "location": {
+        "index": 14
+      },
+      "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+      "objectSize": {
+        "width": {
+          "magnitude": 150,
+          "unit": "PT"
+        },
+        "height": {
+          "magnitude": 50,
+          "unit": "PT"
+        }
+      }
+    }
+  }
+]

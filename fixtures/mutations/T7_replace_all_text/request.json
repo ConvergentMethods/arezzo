@@ -1,0 +1,11 @@
+[
+  {
+    "replaceAllText": {
+      "containsText": {
+        "text": "revenue",
+        "matchCase": false
+      },
+      "replaceText": "REVENUE"
+    }
+  }
+]

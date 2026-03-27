@@ -1,0 +1,21 @@
+[
+  {
+    "updateTextStyle": {
+      "range": {
+        "startIndex": 1,
+        "endIndex": 13
+      },
+      "textStyle": {
+        "fontSize": {
+          "magnitude": 14,
+          "unit": "PT"
+        },
+        "weightedFontFamily": {
+          "fontFamily": "Georgia",
+          "weight": 400
+        }
+      },
+      "fields": "fontSize,weightedFontFamily"
+    }
+  }
+]

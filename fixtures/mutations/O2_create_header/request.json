@@ -1,0 +1,12 @@
+[
+  {
+    "createHeader": {
+      "type": "DEFAULT"
+    }
+  },
+  {
+    "createFooter": {
+      "type": "DEFAULT"
+    }
+  }
+]
