@@ -240,3 +240,35 @@ No commit was made. All work recovered from unstaged/untracked files.
 - None.
 
 ---
+
+## 2026-03-27 — Post-publish: Opus review + directory reorganization
+
+**Accomplishments:**
+- Implemented both Opus code review items:
+  1. Added exhaustive operation type list (all 23 types) to edit_document tool description. Replaces vague "Supports: ... etc." — "etc." causes agent hallucination.
+  2. Added dedicated `val_insert_text_at_end` to Phase 3 live validation suite. Isolated test for `{"end": true}` address mode: asserts text lands after all document content with nothing following it.
+- Reorganized project directory to match Boyce paradigm:
+  - Created `_strategy/` (internal planning), `_strategy/plans/`, `_strategy/research/`, `_strategy/history/`
+  - Moved ARCHITECTURE.md → `_strategy/`
+  - Moved FINDINGS.md, OPERATION_CATALOG.md → `_strategy/research/`
+  - Moved Opus review artifacts → `_strategy/`
+  - Created `scripts/` for dev utilities (auth.py, fixture scripts, validation scripts)
+- Rewrote CLAUDE.md to match Boyce standard (session protocol, folder visibility convention, directory tree, key commands, status bar)
+- Confirmed PyPI publication: arezzo 0.1.0 live, README renders correctly on PyPI
+- Confirmed arezzo.dev domain registration (DNS resolves, no site deployed)
+- Updated CM root CLAUDE.md (stale Arezzo description → current state)
+- Updated all ops layer docs: ROADMAP.md, SESSION_LOG.md, OPUS_BRIEF.md (project + CEO), MASTER.md
+
+**Incomplete:**
+- Cross-platform MCP client testing — HITL (Will tests with Claude Desktop, Cursor, Claude Code)
+- MCP directory submissions — HITL (Will-controlled)
+- arezzo.dev site deployment — needs hosting decision
+- v0.1.1 publish with Opus review changes (operation type list in tool description)
+
+**Next step:** Will runs cross-platform MCP client testing. After that, MCP directory submissions.
+**Gate status:** HITL-gated (cross-platform testing, MCP submissions)
+
+**Proposed amendments:**
+- None.
+
+---

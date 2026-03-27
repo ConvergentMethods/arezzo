@@ -11,10 +11,10 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
 **One-sentence thesis:** Deterministic layers turn silent wrongness into loud correctness failures.
 
 ## Current State
-- **Phase:** Phases 4+5 complete. Awaiting HITL review.
-- **Status:** Phases 1–5 all done (2026-03-27). 210 tests passing. 6/6 live MCP validations. Full distribution package ready. PyPI publish deferred (name conflict). MCP directory submissions Will-controlled.
+- **Phase:** PUBLISHED v0.1.0 to PyPI (2026-03-27). Post-publish review + distribution.
+- **Status:** `pip install arezzo` live. 210 unit tests, 9/9 live validations (8 Phase 3 + 1 end-of-doc added per Opus review). 6/6 live MCP validations. Domain `arezzo.dev` registered (no site deployed yet). Opus code review items implemented.
 - **Key deliverables:**
-  - `arezzo/server.py` — MCP server with 3 tools, behavioral advertising framework
+  - `arezzo/server.py` — MCP server with 3 tools, behavioral advertising framework, full operation type list in tool description (Opus review item)
   - `arezzo/cli.py` — CLI entry point (serve/init/version)
   - `arezzo/setup.py` — arezzo init wizard + platform config generation
   - `arezzo/auth.py` — package-level auth (config dir + env var + dev fallback)
@@ -24,31 +24,34 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
   - `arezzo/index.py` — UTF-16 arithmetic, surrogate pair handling
   - `arezzo/operations/` — 5 operation compiler modules
   - `arezzo/tests/` — 210 tests across 11 test files
-  - `README.md` — dual-optimized, MCP tool docs, architecture
+  - `README.md` — dual-optimized, MCP tool docs, architecture (renders on PyPI)
   - `LICENSE` — MIT
-- **Review artifacts (for Opus):**
-  - `_strategy/OPUS_SOURCE_REVIEW.md` — all 9 source files + review response (single doc for Opus)
-  - `_strategy/OPUS_REVIEW_RESPONSE.md` — tool descriptions, validations, corruption tests, auth flow
+- **Project structure:** Reorganized to match Boyce paradigm. `_strategy/` for internal planning/research, `scripts/` for dev utilities.
 
 ## Recent Decisions
-- 2026-03-27: Will authorized CC to build through Phase 5 before HITL review. Gates preserved, not removed.
-- 2026-03-27: Phase 4 MCP server design: 3 tools (read_document, edit_document, validate_operations). Behavioral advertising framework transferred from Boyce.
-- 2026-03-24: Architecture locked: two-phase compilation, pure function compiler, 6 address modes, UTF-16 internally, reverse index order, always emit tabId.
-- 2026-03-24: Boyce shipped to PyPI. Arezzo build gate cleared.
+- 2026-03-27: **PUBLISHED to PyPI.** `pip install arezzo` live. v0.1.0.
+- 2026-03-27: **arezzo.dev domain registered.** DNS resolves. No site deployed yet.
+- 2026-03-27: Opus code review completed. Two items implemented: (1) exhaustive operation type list in edit_document tool description, (2) dedicated end-of-document live validation test.
+- 2026-03-27: Project directory reorganized to match Boyce paradigm (_strategy/, scripts/).
+- 2026-03-27: Will authorized CC to build through Phase 5 before HITL review.
+- 2026-03-24: Architecture locked: two-phase compilation, pure function compiler, 6 address modes.
 
 ## Open Questions
-- PyPI name `arezzo` is available. Ready to publish when Opus review approves.
+- arezzo.dev site: what to deploy? Static page (like convergentmethods.com/boyce/) or redirect to PyPI/GitHub?
 - MCP directory submission timing: Will's call.
+- Cross-platform MCP client testing: Claude Desktop, Cursor, Claude Code — Will tests.
 
 ## Blocked Items
-- PyPI publish — awaiting Opus code review completion before publication.
 - MCP directory submissions — Will-controlled.
+- arezzo.dev site deployment — needs hosting decision.
 
 ## Cross-Project Dependencies
 - Boyce shipped. No remaining Boyce blocker.
-- Behavioral advertising framework (from Boyce) applies to Arezzo MCP tool descriptions in Phase 4.
+- Behavioral advertising framework (from Boyce) applies to Arezzo MCP tool descriptions.
 - Product line positioning: Boyce (database formalism) + Arezzo (document formalism).
+- LLM SEO study can reference Arezzo as second case study alongside Boyce.
 
 ## HITL Queue
-- **Phases 4+5 joint review (NOW ACTIVE):** Build phases complete. Will reviews: cross-platform MCP client testing, compiler output for 3 representative operations (async), PyPI naming decision, MCP directory submission timing.
-- **Phase 2 async review:** Will catches up on compiler output for 3 representative operations (deferred, not blocking).
+- **Cross-platform MCP client testing (NOW DUE):** Will tests arezzo serve with Claude Desktop, Cursor, Claude Code. This is the primary remaining validation before distribution.
+- **MCP directory submissions:** Smithery, PulseMCP, mcp.so, Glama. Will-controlled timing.
+- **Phase 2 async review:** Will catches up on compiler output for 3 representative operations (deferred, not blocking — publish already happened).

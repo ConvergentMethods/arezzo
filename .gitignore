@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Google OAuth credentials — NEVER commit
+credentials.json
+client_secret*.json
+token.json
+
+# uv
+uv.lock
+
+# OS
+.DS_Store

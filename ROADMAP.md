@@ -4,8 +4,8 @@
 > Will authors phases and gate types. CC maintains status and proposes amendments.
 
 ## Current Phase
-Phase: Phase 5 — CLI + Distribution
-Status: Complete (2026-03-27). arezzo init, platform configs, package metadata, README, LICENSE all done. PyPI publish ready (awaiting Opus code review). MCP directory submissions controlled by Will.
+Phase: Post-publish — Distribution & Testing
+Status: PUBLISHED v0.1.0 to PyPI (2026-03-27). Opus code review items implemented. Remaining: cross-platform MCP client testing (Will), MCP directory submissions (Will), arezzo.dev site deployment.
 
 ## Phases
 
@@ -91,3 +91,5 @@ Status: Complete (2026-03-27). arezzo init, platform configs, package metadata, 
 ## Amendments Log
 - [2026-03-24] [CC] Phase 2 and 3 split from original "Architecture Design" + "Core Engine" phases. Architecture is now part of Phase 2 Step 1 (committed from Opus handoff). Phase 3 is live API validation. Status: approved (Will + Opus directive).
 - [2026-03-27] [Will] HITL gates between Phases 4→5 deferred. CC authorized to continue building through Phase 5. Will reviews Phases 4+5 together after build phases complete. Gates preserved, not removed.
+- [2026-03-27] [Will] Published v0.1.0 to PyPI. `arezzo` name was available. arezzo.dev domain registered.
+- [2026-03-27] [Opus] Code review completed. Two items: (1) exhaustive operation type list in edit_document tool description — "etc." causes agent hallucination, (2) dedicated end-of-document live validation test added to Phase 3 suite.
