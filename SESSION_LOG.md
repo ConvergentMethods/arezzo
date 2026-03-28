@@ -272,3 +272,28 @@ No commit was made. All work recovered from unstaged/untracked files.
 - None.
 
 ---
+
+## 2026-03-28 — Phase 6: Plans import + promotion to products/
+
+**Accomplishments:**
+- Imported Boyce's distribution, testing, and adoption patterns into Arezzo _strategy/:
+  - `plans/live-testing-program.md` — Tier 2 (real-world) + Tier 3 (corner cases) + platform matrix
+  - `plans/agent-adoption-docs.md` — README audit, llms.txt, llms-full.txt
+  - `plans/distribution-launch.md` — Registries, essay, community posts
+  - `mcp-directory-submissions.md` — Pre-drafted content for Smithery, PulseMCP, mcp.so, Glama
+- Updated ROADMAP.md: Phase 6 (Live Testing & Distribution) with sprint sequence, Phase 7 (Workspace Expansion)
+- Moved Arezzo from `dev/arezzo/` to `products/arezzo/` — promoted from early-stage to shipped product
+- Updated all CM-level references: CLAUDE.md, MASTER.md, AGENTS.md, backup-infrastructure.md, management handoff doc
+
+**Incomplete:**
+- Phase 6 execution (live testing, agent docs, distribution) — not started
+- v0.1.1 publish with Opus review changes
+- Cross-platform MCP client testing — HITL
+
+**Next step:** Execute Phase 6 Sprint 0 — create Tier 2 real-world test documents.
+**Gate status:** Agent-gated (Sprint 0-2), HITL-gated (Sprint 3 — Will runs MCP clients)
+
+**Proposed amendments:**
+- None.
+
+---

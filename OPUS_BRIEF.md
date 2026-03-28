@@ -29,11 +29,10 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
 - **Project structure:** Reorganized to match Boyce paradigm. `_strategy/` for internal planning/research, `scripts/` for dev utilities.
 
 ## Recent Decisions
+- 2026-03-28: Promoted from `dev/arezzo/` to `products/arezzo/` — shipped product status.
+- 2026-03-28: Phase 6 created (Live Testing & Distribution). Boyce patterns imported: testing program, agent docs, distribution plan, MCP directory submissions template.
 - 2026-03-27: **PUBLISHED to PyPI.** `pip install arezzo` live. v0.1.0.
-- 2026-03-27: Domain search: arezzo.dev is taken (Porkbun). Need alternative.
-- 2026-03-27: Opus code review completed. Two items implemented: (1) exhaustive operation type list in edit_document tool description, (2) dedicated end-of-document live validation test.
-- 2026-03-27: Project directory reorganized to match Boyce paradigm (_strategy/, scripts/).
-- 2026-03-27: Will authorized CC to build through Phase 5 before HITL review.
+- 2026-03-27: Opus code review completed. Two items implemented.
 - 2026-03-24: Architecture locked: two-phase compilation, pure function compiler, 6 address modes.
 
 ## Open Questions
