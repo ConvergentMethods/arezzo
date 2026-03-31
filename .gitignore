@@ -12,5 +12,9 @@ token.json
 # uv
 uv.lock
 
+# Environment
+.env
+.env.*
+
 # OS
 .DS_Store
