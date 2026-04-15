@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.convergentmethods/arezzo",
+  "title": "Arezzo",
+  "description": "Deterministic Google Docs API compiler. MCP server that compiles semantic edit intent into correct batchUpdate sequences — handling UTF-16 arithmetic, cascading index shifts, and OT-compatible request ordering so the API stops silently corrupting documents.\n\n*Named for Guido d'Arezzo (~991–1033), who standardized music notation.*",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/ConvergentMethods/arezzo",
+  "repository": {
+    "url": "https://github.com/ConvergentMethods/arezzo",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "arezzo",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_APPLICATION_CREDENTIALS",
+          "description": "Path to the Google OAuth2 client credentials JSON (Desktop application type, Docs API enabled). Required — the Google Docs API does not support anonymous access. Run 'arezzo init' to walk through OAuth setup and write platform config.",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "com.convergentmethods": {
+      "tagline": "Deterministic Google Docs API compiler. Your agent stops silently corrupting documents.",
+      "keywords": [
+        "google-docs",
+        "workspace",
+        "mcp",
+        "deterministic",
+        "compiler",
+        "batchupdate",
+        "utf-16",
+        "semantic-compilation"
+      ],
+      "license": "MIT",
+      "toolCount": 3,
+      "testCount": 210,
+      "liveValidations": {"api": "9/9", "mcp": "6/6"},
+      "categories": ["productivity", "google-workspace", "developer-tools"],
+      "tools": [
+        "read_document",
+        "edit_document",
+        "validate_operations"
+      ],
+      "fixturesArtifact": "https://github.com/ConvergentMethods/google-docs-api-fixtures",
+      "fixturesClaim": "23 reproducible failure modes in the Google Docs batchUpdate API"
+    }
+  }
+}
