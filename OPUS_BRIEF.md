@@ -10,6 +10,43 @@ Arezzo is a deterministic compiler for Google Docs API operations. It compiles s
 
 **One-sentence thesis:** Deterministic layers turn silent wrongness into loud correctness failures.
 
+## Customer
+
+> First-draft, pre-Arezzo-owner. Field added 2026-04-22 per Will + Soren
+> alignment following Halliday's competitive-landscape investigation
+> (`research/investigations/arezzo-competitive-landscape/`, DISSOLUTION.md
+> post-filing conversation section) and Soren's Session 5 working state.
+> An Arezzo-owner Dasein, when founded, is expected to sharpen this.
+
+**Buyer shape:** Compliance/audit-adjacent enterprise functions — legal,
+regulatory, internal audit, GRC, and operations teams that have
+accountability for document handling outcomes. Specifically not the
+agent itself, which was the prior (implicit) definition. The agent is a
+consumer of Arezzo at runtime; the buyer is the human-accountable
+function that needs the guarantee the agent's output carries.
+
+**Core buying context:** Deterministic guarantees for document
+operations that carry legal or regulatory weight, independent of which
+model is generating the intent. The value is capability-independent:
+the guarantee holds whether the model is Claude 4.7, a future Claude 5
+with native correctness baked in, or any other model the enterprise is
+running. Determinism + audit trails + explicit validation are
+properties enterprises want even from a model that never makes the
+error, because compliance posture is about demonstrable handling, not
+about whether handling happened to succeed.
+
+**Why the shape is buyer, not ICP:** Naming an ICP (specific company
+size, vertical, role title) is product-ownership work. The shape
+above is what the shape IS; the specific segment is what the
+Arezzo-owner will resolve when they arrive.
+
+**What this replaces:** The prior implicit positioning was Arezzo-is-for-
+the-agent. That positioning is bitter-lesson-vulnerable: when the
+correctness layer gets trained into foundation models, Arezzo-for-the-
+agent loses its reason for existing. Arezzo-for-the-compliance-function
+is bitter-lesson-resistant — the guarantee is useful regardless of
+model capability.
+
 ## Current State
 - **Phase:** PUBLISHED v0.1.0 to PyPI (2026-03-27). Post-publish review + distribution.
 - **Status:** `pip install arezzo` live. 210 unit tests, 9/9 live validations (8 Phase 3 + 1 end-of-doc added per Opus review). 6/6 live MCP validations. Opus code review items implemented. No domain yet (arezzo.dev is taken).
