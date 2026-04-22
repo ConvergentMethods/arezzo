@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.convergentmethods/arezzo",
+  "name": "io.github.ConvergentMethods/arezzo",
   "title": "Arezzo",
   "description": "Deterministic Google Docs API compiler. Your agent stops silently corrupting documents.",
   "version": "0.1.0",
