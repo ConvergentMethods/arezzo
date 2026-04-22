@@ -1,5 +1,7 @@
 # Arezzo
 
+<!-- mcp-name: io.github.ConvergentMethods/arezzo -->
+
 Deterministic compiler for Google Docs API operations.
 
 You cannot safely modify a Google Doc by constructing `batchUpdate` requests yourself. The API uses UTF-16 code units with cascading index shifts — insert 10 characters at position 50, and every subsequent index in your batch is now wrong. A single miscalculation silently corrupts the document with no error message.
