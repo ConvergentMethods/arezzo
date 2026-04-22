@@ -3,7 +3,7 @@
   "name": "io.github.ConvergentMethods/arezzo",
   "title": "Arezzo",
   "description": "Deterministic Google Docs API compiler. Your agent stops silently corrupting documents.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://github.com/ConvergentMethods/arezzo",
   "repository": {
     "url": "https://github.com/ConvergentMethods/arezzo",
@@ -14,7 +14,7 @@
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "arezzo",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
