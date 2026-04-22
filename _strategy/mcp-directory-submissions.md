@@ -157,4 +157,14 @@ After submitting to each registry:
 
 ---
 
-*Draft prepared 2026-03-28. Adapted from Boyce's mcp-directory-submissions.md.*
+## Submission Log
+
+- **2026-04-22** — Official MCP registry publish (`registry.modelcontextprotocol.io`). Live at 0.1.1.
+- **2026-04-22** — mcp.so submitted + enriched. Server ID `5161ea86-3ad9-453b-af30-7cde89cb1c94`. Pending moderation.
+- **2026-04-22** — Glama submitted via Add Server modal (logged-in Chromium). Pending review.
+- **PulseMCP** — HELD for 48h. Self-describes as Sub-Registry and is an official-registry backer; auto-pull expected. If not listed by 2026-04-24, reCAPTCHA-gated manual submission required. See `ops/research/2026-04-22_mcp-registry-auto-ingest-finding.md`.
+- **Smithery** — not yet submitted. Out of scope for 2026-04-22 session.
+
+---
+
+*Draft prepared 2026-03-28. Adapted from Boyce's mcp-directory-submissions.md. Submitted 2026-04-22.*
