@@ -162,7 +162,7 @@ After submitting to each registry:
 - **2026-04-22** — Official MCP registry publish (`registry.modelcontextprotocol.io`). Live at 0.1.1.
 - **2026-04-22** — mcp.so submitted + enriched. Server ID `5161ea86-3ad9-453b-af30-7cde89cb1c94`. Pending moderation.
 - **2026-04-22** — Glama submitted via Add Server modal (logged-in Chromium). Pending review.
-- **PulseMCP** — HELD for 48h. Self-describes as Sub-Registry and is an official-registry backer; auto-pull expected. If not listed by 2026-04-24, reCAPTCHA-gated manual submission required. See `ops/research/2026-04-22_mcp-registry-auto-ingest-finding.md`.
+- **PulseMCP** — Auto-pull CONFIRMED 2026-04-28 (recheck after 2026-04-24 watch date). Listed as "Arezzo" / Convergent Methods / Official, with description "Deterministic Google Docs compiler that handles UTF-16 index arithmetic so AI agents stop corrupting documents." Sub-registry hypothesis from `ops/research/2026-04-22_mcp-registry-auto-ingest-finding.md` validated; manual submission and reCAPTCHA-gating dropped from the publish checklist permanently for sub-registry-class surfaces.
 - **Smithery** — not yet submitted. Out of scope for 2026-04-22 session.
 
 ---
